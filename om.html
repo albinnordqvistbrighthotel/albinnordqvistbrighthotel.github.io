@@ -1,0 +1,266 @@
+<!DOCTYPE html> 
+<html lang="sv">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bright Hotel</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>	
+	
+</head>
+<body class="body">
+   
+    <header>
+        <div class="imagea">
+          <img src="img/way.jpg" alt="Väg">
+        </div>
+        <div class="mainDiv">
+          <nav><ul>
+                  <li><a href="index.html">Start</a></li>
+                  <li class="active"><a href="om.html">Om Oss</a></li>
+                  <li><a href="rum.html">Rum</a></li>
+                  <li><a href="kontakt.html">Kontakt</a></li>
+               </ul></nav>
+        </div>  
+    </header>
+    
+    <div class="mainContent">
+       <div class="content">
+            <article class="topcontent">
+              <header>
+                   <h2><a href="https://www.google.se/" title="Nyheter">Nyheter</a></h2>
+                </header>
+                
+                <footer>
+                    <p class="post-info">Nyheten är skriven den 15/5-2017</p>
+                </footer>
+                
+                <content>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                
+                    <p><iframe id="iframemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101327.79834720437!2d13.021345488319547!3d55.54288270042577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a756f8cf66b1%3A0x59c816d5a312fdc7!2sPolis+Larssons+v%C3%A4g%2C+218+53+Klagshamn!5e0!3m2!1ssv!2sse!4v1493295060243" width="315" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> </p>
+                </content>
+           </article>
+           
+           <article class="bottomcontent">
+              <header>
+                   <h2><a href="https://www.google.se/" title="Något annat">Något annat</a></h2>
+                </header>
+                
+                <footer>
+                    <p class="post-info">Nyheten är skriven den 15/5-2017</p>
+                </footer>
+                
+                <content>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </content>
+           </article>
+           
+        </div>
+    </div>
+
+    <aside class="top-sidebar">
+        <article>
+            <h2>Boka Datum Från</h2>
+            <p><center>
+<script language="javascript" type="text/javascript">
+var day_of_week = new Array('Sön','Mån','Tis','Ons','Tors','Fre','Lör');
+var month_of_year = new Array('Januari','Februari','Mars','April','Maj','Juni','Juli','Augusti','September','Oktober','November','December');
+
+
+var Calendar = new Date();
+
+var year = Calendar.getFullYear();     
+var month = Calendar.getMonth();  
+var today = Calendar.getDate();    
+var weekday = Calendar.getDay();    
+
+var DAYS_OF_WEEK = 7;   
+var DAYS_OF_MONTH = 31;    
+var cal;    
+
+Calendar.setDate(1);   
+Calendar.setMonth(month);    
+
+
+var TR_start = '<TR>';
+var TR_end = '</TR>';
+var highlight_start = '<TD WIDTH="30"><TABLE CELLSPACING=0 BORDER=1 BGCOLOR=DEDEFF BORDERCOLOR=CCCCCC><TR><TD WIDTH=20><B><CENTER>';
+var highlight_end   = '</CENTER></TD></TR></TABLE></B>';
+var TD_start = '<TD WIDTH="30"><CENTER>';
+var TD_end = '</CENTER></TD>';
+
+cal =  '<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=0 BORDERCOLOR=BBBBBB><TR><TD>';
+cal += '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2>' + TR_start;
+cal += '<TD COLSPAN="' + DAYS_OF_WEEK + '" BGCOLOR="#EFEFEF"><CENTER><B>';
+cal += month_of_year[month]  + '   ' + year + '</B>' + TD_end + TR_end;
+cal += TR_start;
+
+for(index=0; index < DAYS_OF_WEEK; index++)
+{
+if(weekday == index)
+cal += TD_start + '<B>' + day_of_week[index] + '</B>' + TD_end;
+
+else
+cal += TD_start + day_of_week[index] + TD_end;
+}
+
+cal += TD_end + TR_end;
+cal += TR_start;
+
+for(index=0; index < Calendar.getDay(); index++)
+cal += TD_start + '  ' + TD_end;
+
+for(index=0; index < DAYS_OF_MONTH; index++)
+{
+if( Calendar.getDate() > index )
+{
+  week_day =Calendar.getDay();
+
+  if(week_day == 0)
+  cal += TR_start;
+
+  if(week_day != DAYS_OF_WEEK)
+  {
+  var day  = Calendar.getDate();
+
+  // HIGHLIGHT TODAY'S DATE
+  if( today==Calendar.getDate() )
+  cal += highlight_start + day + highlight_end + TD_end;
+  else
+  cal += TD_start + day + TD_end;
+  }
+
+  if(week_day == DAYS_OF_WEEK)
+  cal += TR_end;
+  }
+
+  Calendar.setDate(Calendar.getDate()+1);
+
+}
+
+cal += '</TD></TR></TABLE></TABLE>';
+
+document.write(cal);
+
+</script>
+</center>
+</p>
+        </article>
+    </aside> 
+    
+    <aside class="middle-sidebar">
+        <article>
+            <h2>Boka Datum Till</h2>
+            <p><center>
+<script language="javascript" type="text/javascript">
+var day_of_week = new Array('Sön','Mån','Tis','Ons','Tors','Fre','Lör');
+var month_of_year = new Array('Januari','Februari','Mars','April','Maj','Juni','Juli','Augusti','September','Oktober','November','December');
+
+
+var Calendar = new Date();
+
+var year = Calendar.getFullYear();     
+var month = Calendar.getMonth();  
+var today = Calendar.getDate();    
+var weekday = Calendar.getDay();    
+
+var DAYS_OF_WEEK = 7;   
+var DAYS_OF_MONTH = 31;    
+var cal;    
+
+Calendar.setDate(1);   
+Calendar.setMonth(month);    
+
+
+var TR_start = '<TR>';
+var TR_end = '</TR>';
+var highlight_start = '<TD WIDTH="30"><TABLE CELLSPACING=0 BORDER=1 BGCOLOR=DEDEFF BORDERCOLOR=CCCCCC><TR><TD WIDTH=20><B><CENTER>';
+var highlight_end   = '</CENTER></TD></TR></TABLE></B>';
+var TD_start = '<TD WIDTH="30"><CENTER>';
+var TD_end = '</CENTER></TD>';
+
+cal =  '<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=0 BORDERCOLOR=BBBBBB><TR><TD>';
+cal += '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2>' + TR_start;
+cal += '<TD COLSPAN="' + DAYS_OF_WEEK + '" BGCOLOR="#EFEFEF"><CENTER><B>';
+cal += month_of_year[month]  + '   ' + year + '</B>' + TD_end + TR_end;
+cal += TR_start;
+
+for(index=0; index < DAYS_OF_WEEK; index++)
+{
+if(weekday == index)
+cal += TD_start + '<B>' + day_of_week[index] + '</B>' + TD_end;
+
+else
+cal += TD_start + day_of_week[index] + TD_end;
+}
+
+cal += TD_end + TR_end;
+cal += TR_start;
+
+for(index=0; index < Calendar.getDay(); index++)
+cal += TD_start + '  ' + TD_end;
+
+for(index=0; index < DAYS_OF_MONTH; index++)
+{
+if( Calendar.getDate() > index )
+{
+  week_day =Calendar.getDay();
+
+  if(week_day == 0)
+  cal += TR_start;
+
+  if(week_day != DAYS_OF_WEEK)
+  {
+  var day  = Calendar.getDate();
+
+  // HIGHLIGHT TODAY'S DATE
+  if( today==Calendar.getDate() )
+  cal += highlight_start + day + highlight_end + TD_end;
+  else
+  cal += TD_start + day + TD_end;
+  }
+
+  if(week_day == DAYS_OF_WEEK)
+  cal += TR_end;
+  }
+
+  Calendar.setDate(Calendar.getDate()+1);
+
+}
+
+cal += '</TD></TR></TABLE></TABLE>';
+
+document.write(cal);
+
+</script>
+</center>
+ </p>
+        </article>
+    </aside> 
+    
+    <aside class="bottom-sidebar">
+        <article>
+            <h2>Antal Personer</h2>
+            <p><select>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>    
+  <option value="9">9</option>
+  <option value="10">10</option>                 
+</select></p>
+            <p><button type="button">Boka</button></p>
+        </article>
+    </aside> 
+    
+    <footer class="mainFooter">
+        <p>BrightHotel@info.se | 0757237444</p>
+    </footer>
+    
+</body>
+</html>

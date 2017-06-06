@@ -1,0 +1,345 @@
+body{
+    background-image: url(img/background.png);
+    color: #000305;
+    font-size: 87.5%;
+    font-family: Arial, 'Lucida Sans Unicode';
+    line-height: 1.5;
+    text-align: left;
+    
+}
+
+
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #CF5C3F;
+}
+
+a:hover, a:active{
+    background-color: #CF5C3F;
+    color: white;
+}
+
+.body {
+    margin: 0 auto;
+    width: 70%;
+    clear: both;
+}
+
+/*ingeting med nav o mainheader funkar..*/
+.imagea img {
+    width: 100%;
+    height: auto;
+    margin: 2% 0;
+}
+
+.mainDiv nav {
+    background-color: #666;
+    height: 40px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    
+}
+
+.mainDiv nav ul {
+    list-style:none;
+    margin: 0 auto;
+}
+
+.mainDiv nav ul li {
+    float: left;
+    display: inline;
+}
+
+.mainDiv nav a:link, .mainDiv nav a:visited{
+    color: #fff;
+    display: inline-block;
+    padding: 10px 25px;
+    height: 20px;
+}
+
+.mainDiv nav a:hover, .mainDiv nav a:active, 
+.mainDiv nav .active a:link, .mainDiv nav .active a:visited{
+    background-color: #CF5C3F;
+    text-shadow: none;
+}
+
+.mainDiv nav ul lu a {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.mainContent{
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    line-height: 25px;
+}
+
+.content{
+    width: 70%;
+    float: left;
+}
+
+.topcontent{
+    background-color: white;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 3% 5%;
+    margin-top: 2%;
+}
+
+.bottomcontent{
+    background-color: white;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 3% 5%;
+    margin-top: 2%;
+}
+
+.top-sidebar{
+    width: 27%;
+    float: left;
+    background-color: white;  
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 1.5% 0 2% 3%;
+    text-align: center;
+    padding-bottom: 2.6%;
+        /*paddingen blir inte bra*/
+}
+.post-info {
+    font-style: italic;
+    color: #999;
+    font-size: 90%;
+}
+
+.middle-sidebar{
+    width: 27%;
+    float: left;
+    background-color: white;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 2% 0 2% 3%;
+    text-align: center;
+    padding-bottom: 1%
+}
+
+.bottom-sidebar{
+    width: 27%;
+    float: left;
+    background-color: white;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 2% 0 2% 3%;
+    text-align: center;
+}
+
+.mainFooter {
+    height: 40px;
+    width: 100%;
+    float: left;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #666;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.mainFooter p {
+    width: 92%;
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (min-width: 150px) and (max-width: 600px) {
+    
+    .body {
+    width: 90%;
+        font-size: 95%;
+    }
+    .mainDiv img {
+    width: 100%;
+    }
+    
+    .mainDiv nav {
+    height: 160px;
+    }
+
+    .mainDiv nav ul {
+        padding-left: 0;
+    }
+
+.mainDiv nav ul li {
+    width: 100%;
+    text-align: center;
+}
+
+.mainDiv nav a:link, .mainDiv nav a:visited{
+    padding: 10px 25px;
+    height: 20px;
+    display: block;
+}
+    .post-info{
+        display: none;
+    }
+
+.content{
+    width: 100%;
+    float: left;
+    margin-top: 2%;
+}
+
+.topcontent{
+    background-color: white;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 3% 5%;
+    margin-top: 2%;
+}
+
+.bottomcontent{
+    background-color: white;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 3% 5%;
+    margin-top: 2%;
+}
+
+.top-sidebar{
+    width: 91%;
+    float: left;
+    background-color: white;  
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 5% 0 2% 3%;
+    padding: 1% 1% 4% 1%;
+}
+.post-info {
+    font-style: italic;
+    color: #999;
+    font-size: 100%;
+}
+
+.middle-sidebar{
+    width: 91%;
+    float: left;
+    background-color: white;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 2% 0 2% 3%;
+   padding: 1% 1%
+}
+
+.bottom-sidebar{
+    width: 91%;
+    float: left;
+    background-color: white;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 2% 0 2% 3%;
+    padding: 1% 1%
+}
+
+}
